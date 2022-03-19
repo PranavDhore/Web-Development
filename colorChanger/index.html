@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 class="main-heading">Hex Color Code Generator</h1>
+    <div id="box">
+        
+    </div>
+    <div class="button-container">
+        <input type="color" oninput="inputHandler()">
+        <button onclick="changeBackground('red')">Red</button>
+        <button onclick="changeBackground('green')">Green</button>
+        <button onclick="changeBackground('blue')">Blue</button>
+    </div>
+    <div class="hex-container">
+        <input type="text" id="hexDiv" >
+        <button onclick="copyHex()">Copy Code</button>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
